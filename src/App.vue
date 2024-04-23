@@ -14,8 +14,9 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
-
-  <RouterView />
+  <component :is="$route.meta.layout">
+    <RouterView />
+  </component>
 </template>
 
 <style scoped>
