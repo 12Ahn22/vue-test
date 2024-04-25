@@ -41,13 +41,21 @@ const routes = [
     component: BoardView,
   },
   {
-    path: "/:pathMatch(.*)*",
+    path: "/:catchAll(.*)*",
     name: "NotFound",
     meta: {
       layout: Layout2,
     },
     component: NotFound,
   },
+  // {
+  //   path: "/:pathMatch(.*)*",
+  //   name: "NotFound",
+  //   meta: {
+  //     layout: Layout2,
+  //   },
+  //   component: NotFound,
+  // },
 ]
 
 const router = createRouter({
